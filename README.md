@@ -1,5 +1,10 @@
 # StableList
 
+[![GitHub license](https://img.shields.io/github/license/RaysOfTheSun/react-stablelist?color=red)](https://github.com/RaysOfTheSun/react-stablelist/blob/master/LICENSE)
+[![Github issues](https://img.shields.io/github/issues/RaysOfTheSun/react-stablelist?color=informational)](https://github.com/RaysOfTheSun/react-stablelist/issues)
+[![GitHub release](https://img.shields.io/github/release/RaysOfTheSun/react-stablelist)](https://github.com/RaysOfTheSun/react-stablelist/releases)
+[![npm version](https://badge.fury.io/js/react-stablelist.svg)](https://badge.fury.io/js/react-stablelist)
+
 A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.
 
 - Maintains a **constant number** of rendered items
