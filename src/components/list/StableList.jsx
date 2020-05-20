@@ -1,5 +1,6 @@
 import React, { PureComponent, createRef } from "react";
-import StableListUtils from "./lib/utils";
+import StableListUtils from "../../lib/utils.js";
+import propTypes from "prop-types";
 
 class List extends PureComponent {
   constructor(props) {
@@ -226,6 +227,25 @@ class List extends PureComponent {
       </div>
     );
   }
+
+  static propTypes = {
+    ref: propTypes.func,
+    data: propTypes.array.isRequired,
+    dataKey: propTypes.any.isRequired,
+    maxItems: propTypes.number.isRequired,
+    itemCount: propTypes.number.isRequired,
+    threshold: propTypes.number.isRequired,
+    component: propTypes.elementType.isRequired,
+    propProvider: propTypes.func.isRequired,
+    followNewItems: propTypes.bool,
+    direction: propTypes.oneOf(["top", "bottom"])
+  };
+
+  static defaultProps = {
+    direction: "top",
+    threshold: 20,
+    maxItems: 60
+  };
 }
 
 const StableList = React.forwardRef((props, ref) => {
