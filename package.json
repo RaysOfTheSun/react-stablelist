@@ -1,23 +1,41 @@
 {
-  "name": "stablelist",
-  "version": "1.0.0",
-  "description": "",
-  "main": "\"\"",
+  "name": "react-stablelist",
+  "version": "1.0.2",
+  "description": "A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.",
+  "keywords": [
+    "reactjs",
+    "react",
+    "virtualization",
+    "list",
+    "react-components"
+  ],
+  "main": "./dist/reactStableList.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RaysOfTheSun/StableList.git"
   },
-  "author": "Carl Rayos",
-  "license": "Apache-2.0",
+  "author": "C.RaysOfTheSun",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/RaysOfTheSun/StableList/issues"
   },
   "homepage": "https://github.com/RaysOfTheSun/StableList#readme",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
