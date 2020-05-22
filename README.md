@@ -31,8 +31,15 @@ import StableList from "react-stablelist";
 import SpecialComponent from "./SpecialComponent"
 
 
-const App = ()=>{
-    const propProvider = () => {
+const App = () => {
+   /**
+     * @param {string} key a unique string that can be used as a component's "key" prop
+     * @param {number} index the index of the element to be rendered relative to the dataset
+     * @param {boolean} isFresh determines whether the component has just recently been rendered
+     * @param {boolean} isFirstRender determines whether it is the component's first time being rendered
+     * @param {any} propData the information that will be passed to the component as its props
+    */
+    const propProvider = (key, index, isFresh, isFirstRender, propData) => {
         return {
             // your special component's props
             id: Math.random()
