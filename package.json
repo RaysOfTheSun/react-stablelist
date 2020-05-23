@@ -7,7 +7,12 @@
     "react",
     "virtualization",
     "list",
-    "react-components"
+    "react-components",
+    "listview",
+    "virtualized-list",
+    "virtualized-scroll",
+    "virtualized",
+    "react-component"
   ],
   "main": "./dist/reactStableList.js",
   "scripts": {

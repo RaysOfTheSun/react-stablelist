@@ -26,10 +26,16 @@ then use the component somewhere in your react app or component
 
 ```javascript
 import React from "react";
-import {render} from "react-dom";
+import { render } from "react-dom";
 import StableList from "react-stablelist";
-import SpecialComponent from "./SpecialComponent"
 
+/*
+    your component must accept a "className" prop which will be used by
+    StableList for index-specific operations
+*/
+const SpecialComponent = ({className, componentID}) => {
+    return <div className={className} id={componentID}>...</div>
+}
 
 const App = () => {
    /**
@@ -42,7 +48,7 @@ const App = () => {
     const propProvider = (key, index, isFresh, isFirstRender, propData) => {
         return {
             // your special component's props
-            id: Math.random()
+            componentID: Math.random()
         }
     };
 
