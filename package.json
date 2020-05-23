@@ -1,13 +1,18 @@
 {
   "name": "react-stablelist",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.",
   "keywords": [
     "reactjs",
     "react",
     "virtualization",
     "list",
-    "react-components"
+    "react-components",
+    "listview",
+    "virtualized-list",
+    "virtualized-scroll",
+    "virtualized",
+    "react-component"
   ],
   "main": "./dist/reactStableList.js",
   "scripts": {

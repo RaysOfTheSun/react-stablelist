@@ -8,7 +8,8 @@ module.exports = {
   },
   output: {
     filename: "reactStableList.js",
-    libraryTarget: "commonjs2"
+    library: "StableList",
+    libraryTarget: "umd"
   },
   module: {
     rules: [
