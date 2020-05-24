@@ -1,6 +1,6 @@
 {
   "name": "react-stablelist",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.",
   "keywords": [
     "reactjs",
