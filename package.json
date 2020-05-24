@@ -1,6 +1,6 @@
 {
   "name": "react-stablelist",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.",
   "keywords": [
     "reactjs",
@@ -28,6 +28,9 @@
     "url": "https://github.com/RaysOfTheSun/StableList/issues"
   },
   "homepage": "https://github.com/RaysOfTheSun/StableList#readme",
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -46,5 +49,8 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
