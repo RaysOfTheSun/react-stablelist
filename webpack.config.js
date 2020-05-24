@@ -9,7 +9,6 @@ module.exports = {
   },
   output: {
     filename: "reactStableList.js",
-    library: "StableList",
     libraryTarget: "commonjs2"
   },
   module: {
