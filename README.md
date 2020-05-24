@@ -1,4 +1,4 @@
-# StableList
+# React-StableList
 
 [![GitHub license](https://img.shields.io/github/license/RaysOfTheSun/react-stablelist?color=red)](https://github.com/RaysOfTheSun/react-stablelist/blob/master/LICENSE)
 [![Github issues](https://img.shields.io/github/issues/RaysOfTheSun/react-stablelist?color=informational)](https://github.com/RaysOfTheSun/react-stablelist/issues)
@@ -15,6 +15,8 @@ A simple listview component for ReactJS that implements the concept of virtualiz
 While there are already rather amazing react components that implement virtualization techniques such as [React-Virtualized](https://github.com/bvaughn/react-virtualized), [React-Virtuoso](https://github.com/petyosi/react-virtuoso) and a lot more that I have yet to see, I have had difficulty in maintaining a variety of layouts and styles while using the above-mentioned libraries. Thus, React-StableList was developed with responsive design in mind.
 
 # Usage
+
+A [working example](https://codesandbox.io/s/react-stablelist-demo-5duip?file=/src/App.js) is also available.
 
 Install the package
 
@@ -47,7 +49,7 @@ const App = () => {
     */
     const propProvider = (key, index, isFresh, isFirstRender, propData) => {
         return {
-            // your special component's props
+            // ...rest
             componentID: Math.random()
         }
     };
@@ -93,6 +95,13 @@ These methods can be accessed by passing a **ref** to the `StableList` component
 
 - **updateAtIndex(index)**: update a previously redered component instance at the given instance.
 
-# Notes
+## Styling
 
-This component is still under development. More feautures and any necessary bug fixes will be added in future releases.
+Addtional styles can be applied to the component by extending the following classes:
+
+- `.list-root`: The component's parent or root node
+- `.scrolling-container`: The container of the list items
+
+# License
+
+MIT License © 2020 Carl Rayos
