@@ -1,5 +1,6 @@
 const path = require("path");
 const SRC_DIR = path.join(__dirname, "./src");
+const STYLES_DIR = path.join(SRC_DIR, "styles");
 
 module.exports = {
   mode: "production",
@@ -9,7 +10,7 @@ module.exports = {
   output: {
     filename: "reactStableList.js",
     library: "StableList",
-    libraryTarget: "umd"
+    libraryTarget: "commonjs2"
   },
   module: {
     rules: [
@@ -21,6 +22,14 @@ module.exports = {
           plugins: ["@babel/plugin-transform-runtime", "@babel/plugin-proposal-class-properties"],
           presets: ["@babel/preset-env", "@babel/preset-react"]
         }
+      },
+      {
+        test: /\.css?$/,
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
+      },
+      {
+        test: /\.scss$/,
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }]
       }
     ]
   }

@@ -1,0 +1,8 @@
+.list-root {
+  height: 100vh;
+  overflow: hidden scroll;
+  & > .scrolling-container {
+    scrollbar-width: 0;
+    scrollbar-width: none;
+  }
+}

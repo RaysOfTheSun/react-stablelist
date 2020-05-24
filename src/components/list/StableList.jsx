@@ -1,6 +1,7 @@
 import React, { PureComponent, createRef } from "react";
-import StableListUtils from "../../lib/utils.js";
+import StableListUtils from "../../utils.js";
 import propTypes from "prop-types";
+import "../../styles/Styles.scss";
 
 class List extends PureComponent {
   constructor(props) {
@@ -44,7 +45,7 @@ class List extends PureComponent {
       }
     );
 
-    this.props.innerRef.current = { updateAtIndex: this.updateAtIndex };
+    if (this.props.innerRef) this.props.innerRef.current = { updateAtIndex: this.updateAtIndex };
   }
 
   componentDidUpdate(prevProps) {
