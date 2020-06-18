@@ -19,6 +19,8 @@ jobs:
       - run: npm test
       - name: tsc compile
         uses: icrawl/action-tsc@v1
+        with:
+          noEmit: false
       - run: npm run-script build
 
   publish-npm:
