@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/RaysOfTheSun/react-stablelist/releases/tag/1.1.0) - 2020/06/19
+
+### Changed
+
+- Component is now written in TypeScript
+
+### Added
+
+- Horizontal scrolling functionality
+
 ## [1.0.7](https://github.com/RaysOfTheSun/react-stablelist/releases/tag/1.0.7) - 2020/05/24
 
 ### Changed
