@@ -17,10 +17,11 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
-      - name: tsc compile
-        uses: icrawl/action-tsc@v1
-        with:
-          noEmit: false
+      - run: npm run compile
+#       - name: tsc compile
+#         uses: icrawl/action-tsc@v1
+#         with:
+#           noEmit: false
       - run: npm run-script build
 
   publish-npm:
