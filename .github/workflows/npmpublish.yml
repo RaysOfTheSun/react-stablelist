@@ -19,7 +19,7 @@ jobs:
       - run: npm test
       - name: tsc compile
         uses: icrawl/action-tsc@v1
-      - run: npm build
+      - run: npm run-script build
 
   publish-npm:
     needs: build
