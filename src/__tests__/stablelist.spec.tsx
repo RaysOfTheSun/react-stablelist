@@ -6,7 +6,6 @@ import StableList from "../components/list/StableList";
 
 describe("<StableList/>", () => {
   test("Render a React-StableList component", () => {
-    const listRef = useRef(null);
     const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     const propProvider = (
       key: string,
@@ -20,7 +19,6 @@ describe("<StableList/>", () => {
 
     const list = TestRenderer.create(
       <StableList
-        ref={listRef}
         data={data}
         dataKey={Math.random()}
         component={Test}
