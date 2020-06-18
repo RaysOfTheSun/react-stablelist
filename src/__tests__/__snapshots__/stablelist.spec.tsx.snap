@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StableList/> Render a React-StableList component 1`] = `
+<div
+  className="list-root"
+>
+  <div
+    className="scrolling-container"
+  >
+    <p>
+      I successfully rendered and my content is 
+      0
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      1
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      2
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      3
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      4
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      5
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      6
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      7
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      8
+    </p>
+    <p>
+      I successfully rendered and my content is 
+      9
+    </p>
+  </div>
+</div>
+`;

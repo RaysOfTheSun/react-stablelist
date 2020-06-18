@@ -1,8 +1,21 @@
 .list-root {
-  height: 100vh;
-  overflow: hidden scroll;
+  height: auto;
+  max-height: 100%;
+  overflow: auto;
   & > .scrolling-container {
+    min-height: 100%;
     scrollbar-width: 0;
     scrollbar-width: none;
+  }
+
+  &.horizontal-scroll {
+    display: flex;
+    & > .scrolling-container {
+      display: flex;
+      & > * {
+        flex: 1 0 auto;
+        margin: 0 10px;
+      }
+    }
   }
 }

@@ -1,15 +1,20 @@
 const path = require("path");
-const SRC_DIR = path.join(__dirname, "./src");
-const STYLES_DIR = path.join(SRC_DIR, "styles");
+const SRC_DIR = path.join(__dirname, "./build");
+const STYLES_DIR = path.resolve("./src", "styles");
 
 module.exports = {
   mode: "production",
   entry: {
-    main: path.join(SRC_DIR, "components", "list", "StableList.jsx")
+    main: path.join(SRC_DIR, "StableList.jsx"),
   },
   output: {
-    filename: "reactStableList.js",
-    libraryTarget: "commonjs2"
+    filename: "./reactStableList.js",
+    libraryTarget: "commonjs2",
+  },
+  resolve: {
+    alias: {
+      styles: STYLES_DIR,
+    },
   },
   module: {
     rules: [
@@ -17,19 +22,16 @@ module.exports = {
         test: /\.jsx?$/,
         include: SRC_DIR,
         loader: "babel-loader",
+        resolve: { extensions: [".js", ".jsx"] },
         options: {
           plugins: ["@babel/plugin-transform-runtime", "@babel/plugin-proposal-class-properties"],
-          presets: ["@babel/preset-env", "@babel/preset-react"]
-        }
-      },
-      {
-        test: /\.css?$/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
+          presets: ["@babel/preset-env", "@babel/preset-react"],
+        },
       },
       {
         test: /\.scss$/,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }]
-      }
-    ]
-  }
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
+  },
 };

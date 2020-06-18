@@ -2,5 +2,7 @@ src
 demo
 .babelrc
 webpack.config.js
+jest.config.js
+tsconfig.json
 node_modules
 .github
