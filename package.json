@@ -18,8 +18,7 @@
   "scripts": {
     "build": "webpack",
     "test": "jest",
-    "compile": "rm -rf build/ && tsc",
-    "prepublishOnly": "npm run compile"
+    "compile": "rm -rf build/ && tsc"
   },
   "repository": {
     "type": "git",
