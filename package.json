@@ -14,7 +14,7 @@
     "virtualized",
     "react-component"
   ],
-  "main": "./dist/reactStableList.js",
+  "main": "dist/reactStableList.js",
   "scripts": {
     "build": "webpack",
     "test": "jest",
@@ -73,6 +73,6 @@
     "webpack-cli": "^3.3.12"
   },
   "files": [
-    "dist"
+    "dist/"
   ]
 }
