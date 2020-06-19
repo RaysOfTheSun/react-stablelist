@@ -24,3 +24,27 @@ declare interface StableListRef {
     updateBatchOfIndex: (index: number) => void;
   };
 }
+
+declare module "react-stablelist" {
+  import React from "react";
+  declare const StableList: React.ForwardRefExoticComponent<
+    Pick<
+      StableListProps,
+      | "component"
+      | "propProvider"
+      | "data"
+      | "itemCount"
+      | "threshold"
+      | "style"
+      | "horizontalScrolling"
+      | "dataKey"
+      | "maxItems"
+      | "innerRef"
+      | "followNewItems"
+      | "direction"
+      | "className"
+    > &
+      React.RefAttributes<unknown>
+  >;
+  export default StableList;
+}

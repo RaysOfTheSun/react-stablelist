@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/RaysOfTheSun/StableList.git"
   },
-  "types": "./dist/StableList.d.ts",
+  "types": "./@types/react-stablelist/index.d.ts",
   "author": "Carl <C.RaysOfTheSun>",
   "license": "MIT",
   "bugs": {
@@ -72,6 +72,7 @@
     "webpack-cli": "^3.3.12"
   },
   "files": [
-    "dist/"
+    "dist/",
+    "@types/react-stablelist/index.d.ts"
   ]
 }
