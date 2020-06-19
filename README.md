@@ -4,6 +4,7 @@
 [![Github issues](https://img.shields.io/github/issues/RaysOfTheSun/react-stablelist?color=informational)](https://github.com/RaysOfTheSun/react-stablelist/issues)
 [![GitHub release](https://img.shields.io/github/release/RaysOfTheSun/react-stablelist)](https://github.com/RaysOfTheSun/react-stablelist/releases)
 [![npm version](https://badge.fury.io/js/react-stablelist.svg)](https://badge.fury.io/js/react-stablelist)
+![Node.js Package](https://github.com/RaysOfTheSun/react-stablelist/workflows/Node.js%20Package/badge.svg?branch=1.1.2-1)
 
 A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.
 
