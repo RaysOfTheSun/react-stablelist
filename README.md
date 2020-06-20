@@ -107,7 +107,7 @@ Addtional styles can be applied to the component by extending the following clas
 
 ### Notes
 
-Enabling horizontalScrolling by passing in the `horizontalScrolling` prop would apply a `display: flex` to every item rendered by StableList.
+Enabling horizontalScrolling by passing in the `horizontalScrolling` prop would apply a `display: flex` to the root of each item rendered by StableList.
 
 # License
 
