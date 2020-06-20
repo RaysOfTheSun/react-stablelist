@@ -4,7 +4,7 @@
 [![Github issues](https://img.shields.io/github/issues/RaysOfTheSun/react-stablelist?color=informational)](https://github.com/RaysOfTheSun/react-stablelist/issues)
 [![GitHub release](https://img.shields.io/github/release/RaysOfTheSun/react-stablelist)](https://github.com/RaysOfTheSun/react-stablelist/releases)
 [![npm version](https://badge.fury.io/js/react-stablelist.svg)](https://badge.fury.io/js/react-stablelist)
-![Node.js Package](https://github.com/RaysOfTheSun/react-stablelist/workflows/Node.js%20Package/badge.svg?branch=1.1.2-1)
+![Node.js Package](https://github.com/RaysOfTheSun/react-stablelist/workflows/Node.js%20Package/badge.svg?branch=1.1.5)
 
 A simple listview component for ReactJS that implements the concept of virtualization for effieciently rendering a huge dataset.
 
@@ -89,12 +89,14 @@ render(<App/>, document.getElementById("container"));
 ### Optional Props
 
 - **followNewItems**: A boolean that determines whether the list should be scrolled to the bottom when the `itemCount` prop's value changes.
+- **horizontalScrolling**: A boolean that dictates if the component would be scrolling horizontally.
 
 ### Methods
 
 These methods can be accessed by passing a **ref** to the `StableList` component.
 
-- **updateAtIndex(index)**: update a previously redered component instance at the given instance.
+- **updateAtIndex(index)**: Update a previously redered component instance at the given instance.
+- **updateBatchOfIndex(index)**: Perform an update on the batch of the given index.
 
 ## Styling
 
@@ -102,6 +104,10 @@ Addtional styles can be applied to the component by extending the following clas
 
 - `.list-root`: The component's parent or root node
 - `.scrolling-container`: The container of the list items
+
+### Notes
+
+Enabling horizontalScrolling by passing in the `horizontalScrolling` prop would apply a `display: flex` to every item rendered by StableList.
 
 # License
 
